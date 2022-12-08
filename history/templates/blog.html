@@ -1,0 +1,6 @@
+<h1>blog</h1>
+{% for post in publicado%}
+<h2>{{post.title}}</h2>
+<p>{{post.description}}</p>
+<img src="{{post.image.url}}" alt="">
+{% endfor %}

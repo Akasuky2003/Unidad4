@@ -1,0 +1,10 @@
+<h1>index</h1>
+{% for servicios in servicio %}
+<h2>{{servicios.title}}</h2>
+<h3>{{servicios.description}}</h3>
+<img src="{{servicios.image.url}}" alt="">
+{%if servicios.url %}
+<a href="{{servicios.url}}">url</a>
+{% endif %}
+
+{% endfor %}
